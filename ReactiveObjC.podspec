@@ -32,6 +32,11 @@ Pod::Spec.new do |s|
   s.source_files          = "ReactiveObjC/*.{h,m,d}",
                             "ReactiveObjC/extobjc/*.{h,m}"
 
+  s.public_header_files = [
+    "ReactiveObjC/*.h",
+    "ReactiveObjC/extobjc/*.h"
+  ]
+
   s.private_header_files  = "**/*Private.h",
                             "**/*EXTRuntimeExtensions.h",
                             "**/RACEmpty*.h"
